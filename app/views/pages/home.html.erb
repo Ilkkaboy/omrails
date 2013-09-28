@@ -1,15 +1,46 @@
-<div class="hero-unit">
-	<h1>Hey there stranger!</h1>
-	<p>You have found Ilkka's home page for the
-		<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-	</p>
-	<p>
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-success btn-large" %>
-		<%= link_to "Test the Page!", "#", class: "btn btn-warning btn-large" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<div class="hero-unit">	
+		<h1>Welcome back!</h1>
+		<p><br>It is great to see you again! 
+			<br>
+			Let's do the crocodile dance!
+		</p>
+		<p>
+	</div>
+
+	<div class="row">
+	  <div class="span5">
+	    <h2>Be One of the First</h2>
+	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	        <p><a class="btn" href="#">View details &raquo;</a></p>
+	</div>
+
+	<ul class="nav pull-right">
+		<img src="http://www.mwss.ca/upload_image/crocodile.gif" class="img-circle">
+	</ul>
 
 
-<ul class="nav pull-right">
-<img src="http://www.mwss.ca/upload_image/crocodile.gif" class="img-circle">
-</ul>
+<% else %>
+	<div class="hero-unit">
+		<h1>Hey there stranger!</h1>
+		<p><br>You have found Ilkka's home page for the
+			<%= link_to "One Month Rails", "http://onemonthrails.com" %>
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
+			<%= link_to "Test the App!", test_path, class: "btn btn-warning btn-large" %>
+		</p>
+	</div>
+
+	<div class="row">
+	        <div class="span5">
+	          <h2>Be One of the First</h2>
+	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+	        </div>
+
+	<ul class="nav pull-right">
+		<img src="http://www.mwss.ca/upload_image/crocodile.gif" class="img-circle">
+	</ul>
+
+<% end %>
