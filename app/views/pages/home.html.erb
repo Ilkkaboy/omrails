@@ -21,26 +21,44 @@
 
 
 <% else %>
-	<div class="hero-unit">
-		<h1>Hey there stranger!</h1>
-		<p><br>You have found Ilkka's home page for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %>
+
+
+  <div class="hero-unit">
+    <div class="row-fluid">
+        <div class="columnA pull-left">
+             <h1>Hey there stranger!</h1>
+            <p> <br> You have found Ilkka's page for the
+			<%= link_to "One Month Rails", "http://onemonthrails.com" %>.
 		</p>
-		<p>
-			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
+		<p>	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
 			<%= link_to "Test the App!", test_path, class: "btn btn-warning btn-large" %>
 		</p>
-	</div>
+        </div>
+
+        <div class="columnB pull-right">
+            <img src="https://dl.dropboxusercontent.com/u/38177869/baby-crocodile.jpg" class="img-circle">
+        </div>
+
+    </div>
+  </div>
+
+
+
+
 
 	<div class="row">
-	        <div class="span5">
-	          <h2>Be One of the First</h2>
+	        <div class="span6">
+	          <h2>Be One of the First.</h2>
 	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 	          <p><a class="btn" href="#">View details &raquo;</a></p>
 	        </div>
 
-	<ul class="nav pull-right">
-		<img src="http://www.mwss.ca/upload_image/crocodile.gif" class="img-circle">
-	</ul>
+	<div class="row">
+	        <div class="span6">
+	          <h2>Once in a Life.</h2>
+	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+	        </div>
+
 
 <% end %>

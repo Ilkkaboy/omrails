@@ -27,6 +27,12 @@ body{
         line-height: 1.25;
       }
 
+.columnA,
+.columnB{
+    width: 500px;
+  }
+
+
 .btn-toolbar {
        text-align:center;
 }
@@ -39,3 +45,4 @@ body{
         color: $gray;
     }
 }
+
