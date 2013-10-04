@@ -1,23 +1,60 @@
 <% if user_signed_in? %>
-	<div class="hero-unit">	
-		<h1>Welcome back!</h1>
-		<p><br>It is great to see you again! 
-			<br>
-			Let's do the crocodile dance!
+  <div class="hero-unit">
+    <div class="row-fluid">
+        <div class="columnA pull-right">
+        	<br>
+             <h1>SHOW ME THE BURGER</h1>
+            <p> <br>
+            <font size="6">WELCOME BACK TO THE TASTY WORLD OF BURGERS</font>
 		</p>
-		<p>
-	</div>
+		<br>
+		<p>	<%= link_to "Upload a Burger", new_user_registration_path, class: "btn btn-success btn-large" %>
+			 <a href="#HotH"> <button class="btn btn-warning btn-large"> Check 'em Burgers</button></a>
+		</p>
+        </div>
 
-	<div class="row">
-	  <div class="span5">
-	    <h2>Be One of the First</h2>
-	      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	        <p><a class="btn" href="#">View details &raquo;</a></p>
-	</div>
+        <div class="columnB pull-left">
+            <img src="https://dl.dropboxusercontent.com/u/38177869/pig_monster_single%20copy.jpg">
+        </div>
+    </div>
+  </div>
 
-	<ul class="nav pull-right">
-		<img src="http://www.mwss.ca/upload_image/crocodile.gif" class="img-circle">
-	</ul>
+<img class="displayed" src="https://dl.dropboxusercontent.com/u/38177869/arrow2.jpg">
+
+<a name="HotH"> <hr class="featurette-divider"></hr></a>
+
+
+<div class="jumbotron">
+	 <h1> Hot Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
+<br><br><br><br><br><br><br>
+
+<hr class="featurette-divider"></hr>
+
+
+<div class="jumbotron">
+<h1> New Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
+
+
+<br><br><br><br><br><br><br>
+
+<hr class="featurette-divider"></hr>
+
+<div class="jumbotron">
+<h1> Near Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
+
+<br><br><br><br><br><br><br>
 
 
 <% else %>
@@ -25,40 +62,59 @@
 
   <div class="hero-unit">
     <div class="row-fluid">
-        <div class="columnA pull-left">
-             <h1>Hey there stranger!</h1>
-            <p> <br> You have found Ilkka's page for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %>.
+        <div class="columnA pull-right">
+        	<br>
+             <h1>SHOW ME THE BURGER</h1>
+            <p> <br>
+            <font size="6">SHARE, RATE & EAT THE BEST BURGERS IN WORLD</font>
 		</p>
+		<br>
 		<p>	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
-			<%= link_to "Test the App!", test_path, class: "btn btn-warning btn-large" %>
+			 <a href="#HotH"> <button class="btn btn-warning btn-large"> Check 'em Burgers</button></a>
 		</p>
         </div>
 
-        <div class="columnB pull-right">
-            <img src="https://dl.dropboxusercontent.com/u/38177869/baby-crocodile.jpg" class="img-circle">
+        <div class="columnB pull-left">
+            <img src="https://dl.dropboxusercontent.com/u/38177869/pig_monster_single%20copy.jpg">
         </div>
-
     </div>
   </div>
 
+<img class="displayed" src="https://dl.dropboxusercontent.com/u/38177869/arrow2.jpg">
+
+<a name="HotH"> <hr class="featurette-divider"></hr></a>
 
 
+<div class="jumbotron">
+	 <h1> Hot Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
+<br><br><br><br><br><br><br>
+
+<hr class="featurette-divider"></hr>
 
 
-	<div class="row">
-	        <div class="span6">
-	          <h2>Be One of the First.</h2>
-	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	          <p><a class="btn" href="#">View details &raquo;</a></p>
-	        </div>
+<div class="jumbotron">
+<h1> New Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
 
-	<div class="row">
-	        <div class="span6">
-	          <h2>Once in a Life.</h2>
-	           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	          <p><a class="btn" href="#">View details &raquo;</a></p>
-	        </div>
 
+<br><br><br><br><br><br><br>
+
+<hr class="featurette-divider"></hr>
+
+<div class="jumbotron">
+<h1> Near Burgers </h1>
+<p class="lead">
+	#ShowMeTheBurger
+</p>
+</div>
+
+<br><br><br><br><br><br><br>
 
 <% end %>

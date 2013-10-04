@@ -5,8 +5,12 @@ Omrails::Application.routes.draw do
   devise_for :users
 
   get 'about' => 'pages#about'
+  get 'hot' => 'pages#hot'
+  get 'new' => 'pages#new'
+  get 'near' => 'pages#near'
   get 'test' => 'pages#test'
   get 'projects' => 'pages#projects'
+
 
  root :to => 'pages#home'
 
