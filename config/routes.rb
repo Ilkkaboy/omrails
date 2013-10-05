@@ -10,7 +10,8 @@ Omrails::Application.routes.draw do
   get 'near' => 'pages#near'
   get 'test' => 'pages#test'
   get 'projects' => 'pages#projects'
-
+  get 'index' => 'pins#index'
+  get 'post' => 'pins#post'
 
  root :to => 'pages#home'
 

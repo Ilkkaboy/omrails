@@ -1,4 +1,5 @@
 <% if user_signed_in? %>
+
   <div class="hero-unit">
     <div class="row-fluid">
         <div class="columnA pull-right">
@@ -8,7 +9,7 @@
             <font size="6">WELCOME BACK TO THE TASTY WORLD OF BURGERS</font>
 		</p>
 		<br>
-		<p>	<%= link_to "Upload a Burger", new_user_registration_path, class: "btn btn-success btn-large" %>
+		<p>	<%= link_to "Upload a Burger", new_pin_path, class: "btn btn-success btn-large" %>
 			 <a href="#HotH"> <button class="btn btn-warning btn-large"> Check 'em Burgers</button></a>
 		</p>
         </div>
@@ -25,21 +26,16 @@
 
 
 <div class="jumbotron">
-	 <h1> Hot Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "Hot Burgers", hot_path %> </h1>
 </div>
+
 <br><br><br><br><br><br><br>
 
 <hr class="featurette-divider"></hr>
 
 
 <div class="jumbotron">
-<h1> New Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "New Burgers", new_path %> </h1>
 </div>
 
 
@@ -48,10 +44,7 @@
 <hr class="featurette-divider"></hr>
 
 <div class="jumbotron">
-<h1> Near Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "Near Burgers", near_path %> </h1>
 </div>
 
 <br><br><br><br><br><br><br>
@@ -71,6 +64,8 @@
 		<br>
 		<p>	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
 			 <a href="#HotH"> <button class="btn btn-warning btn-large"> Check 'em Burgers</button></a>
+			 <br>  Already have an account? 
+           <%= link_to "Log in now ", new_user_registration_path, style: "color:red" %>
 		</p>
         </div>
 
@@ -86,21 +81,16 @@
 
 
 <div class="jumbotron">
-	 <h1> Hot Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "Hot Burgers", hot_path %> </h1>
 </div>
+
 <br><br><br><br><br><br><br>
 
 <hr class="featurette-divider"></hr>
 
 
 <div class="jumbotron">
-<h1> New Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "New Burgers", new_path %> </h1>
 </div>
 
 
@@ -109,10 +99,7 @@
 <hr class="featurette-divider"></hr>
 
 <div class="jumbotron">
-<h1> Near Burgers </h1>
-<p class="lead">
-	#ShowMeTheBurger
-</p>
+	<h1> <%= link_to "Near Burgers", near_path %> </h1>
 </div>
 
 <br><br><br><br><br><br><br>
