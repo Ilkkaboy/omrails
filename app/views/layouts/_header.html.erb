@@ -13,25 +13,40 @@
     <%= link_to "#BurgerMonster", root_path, class: "brand", style: "color:orange" %>
      
     <!-- Everything you want hidden at 940px or less, place within here -->
-    <div class="nav-collapse collapse">
-    	<ul class="nav"> 
-    	   <li><%= link_to "Home", root_path %></li>
+ 
+        <% if user_signed_in? %>
+   <div class="nav-collapse collapse">
+        <ul class="nav"> 
+           <li><%= link_to "New", root_path %></li>
             <li>  <%= link_to "Hot", hot_path %></li>
-            <li><%= link_to "New", new_path %></li>
             <li><%= link_to "Near", near_path %></li>
      <!--Removed for now:
            <li><%= link_to "Projects", projects_path %></li>
-    	   <li><%= link_to "Test", test_path %></li> -->
-			<li><%= link_to "About", about_path %></li> 
-			</ul>
-			<ul class="nav pull-right">
-        <% if user_signed_in? %>
+           <li><%= link_to "Test", test_path %></li> -->
+            <li><%= link_to "About", about_path %></li> 
+            </ul>
+            <ul class="nav pull-right">
+
+
          <li><%= link_to "My Profile", edit_user_registration_path %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
         <li> <%= link_to "Upload", new_pin_path, style: "color:red" %> </li>
 
           
         <% else %>
+   <div class="nav-collapse collapse">
+        <ul class="nav"> 
+            <li><a href="new.html#A">New</a><li>
+            <li>  <%= link_to "Hot", hot_path %></li>
+            <li><%= link_to "Near", near_path %></li>
+     <!--Removed for now:
+           <li><%= link_to "Projects", projects_path %></li>
+           <li><%= link_to "Test", test_path %></li> -->
+            <li><%= link_to "About", about_path %></li> 
+            </ul>
+            <ul class="nav pull-right">
+
+
 
     	   <li><%= link_to "Login", new_user_session_path %></li>
            <li><%= link_to "Sign up", new_user_registration_path %></li>

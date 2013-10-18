@@ -6,14 +6,13 @@ Omrails::Application.routes.draw do
 
   get 'about' => 'pages#about'
   get 'hot' => 'pages#hot'
-  get 'new' => 'pages#new'
+  get 'new' => 'pins#index'
   get 'near' => 'pages#near'
   get 'test' => 'pages#test'
   get 'projects' => 'pages#projects'
-  get 'index' => 'pins#index'
-  get 'post' => 'pins#post'
+  get 'post' => 'pins#new'
 
- root :to => 'pages#home'
+ root :to => 'pins#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

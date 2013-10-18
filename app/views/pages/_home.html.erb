@@ -1,0 +1,66 @@
+<% if user_signed_in? %>
+
+<div class="row">
+    	<div class="span2">
+    	</div>
+    	
+    	<div class="span2">
+    		<div class="pull-right">
+			<br><br><br>
+				<img src="https://dl.dropboxusercontent.com/u/38177869/pig_monster_newmini.jpg"> 
+		</div> 
+		</div> 
+
+
+    	<div class="span4">
+		<div class="jumbotron">
+				<h1> NEW <br> BURGERS </h1>
+				<p class="lead">
+					@ #BurgerMonster
+				</p>
+		</div>
+		</div>
+		
+		
+		<div class="span4">
+		</div>
+</div>
+
+
+<% else %>
+
+
+  <div class="hero-unit">
+    <div class="row-fluid">
+        <div class="columnA pull-right">
+        	<br>
+             <h1>SHOW ME THE BURGER</h1>
+            <p> <br>
+            <font size="6">SHARE, RATE & EAT THE BEST BURGERS IN WORLD</font>
+		</p>
+		<br>
+		<p>	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
+			 <a href="#A"> <button class="btn btn-warning btn-large"> Check 'em Burgers</button></a>
+			 <br>  Already have an account? 
+           <%= link_to "Log in now ", new_user_registration_path, style: "color:red" %>
+		</p>
+        </div>
+
+        <div class="columnB pull-left">
+            <img src="https://dl.dropboxusercontent.com/u/38177869/pig_monster_single%20copy.jpg">
+        </div>
+    </div>
+  </div>
+
+<img class="displayed" src="https://dl.dropboxusercontent.com/u/38177869/arrow2.jpg">
+
+<a name="A"> <hr class="featurette-divider"></hr></a>
+
+<div class="jumbotron">
+	<h1> NEW <br> BURGERS </h1>
+	<p class="lead">
+  @ #BurgerMonster
+</p>
+</div>
+
+<% end %>
